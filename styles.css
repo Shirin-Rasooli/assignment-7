@@ -1,3 +1,4 @@
+
 nav{
     background-color: black;
     border-top: 1px solid white;
@@ -16,7 +17,18 @@ nav{
     left: 0;
     z-index: 1;
     }
-
+    body{
+        background-color: skyblue;
+       
+    }
+    .product-container{
+        width: 780px;
+        padding: 20px;
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
     nav a{
         text-decoration: none;
         color: cyan;
@@ -26,64 +38,66 @@ nav{
     gap: 20px;
     padding-right: 15px;
     width: 80px;
-
     }
-nav a:hover {
-    background-color: cyan;
-    color: white;
-}
-body{
-    background-color: cyan;
-}
-img{
-    width: 100%;
-    height: 600px;
-}
-.product-container{
-    width: 780px;
-        padding: 20px;
-        background-color: #fff;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-}
-.container-image{
-    position: relative;
-}
-.container-image:hover .caption{
-    visibility: visible;
-}
- .caption{
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: black;
-    color: white;
-    font-size: 24px;
-    padding: 15px;
-}
-.row{
-    display: flex;
-}
- .product img{
-    width: 100%;
-    object-fit: cover;
-}
- .product img{
-border-radius: 50%;
-width: 200px;
-height: 200px;
-padding-bottom: 30px;
-padding-top: 30px;
-padding-left: 30px;
-padding-right: 30px;
-}
- .product-name {
-    font-weight: bold;
-    text-align: center;
-}
-footer{
+    nav a:hover{
+        background-color: cyan;
+        color: black;
+      
+    }
+    .row{
+         display: flex;
+         justify-content: center;
+         gap: 13px;
+    }
+    
+    
+    .product-image{
+        width: 400px;
+        display: flex;
+    }
+    .product-detail{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        width: 400px;
+      
+    }
+    .related-product{
+        position: relative;
+        border: 4px solid black;
+        background-color: lightblue;
+    width: 180px;
+    padding: 10px;
+    }
+    .related-product img{
+     width: 100%;
+     height: 180px;
+     object-fit: fill;
+    }
+    h2{
+        text-align: left;
+        font-size: 30px;
+        color: darkred;
+    }
+    .related-product-name{
+        width: 100%;
+        background-color: black;
+        font-size: 17px;
+        color: cyan;
+        text-align: center;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+    }
+    .related-product:hover .related-product-name{
+        visibility: visible;
+    }
+    footer{
         background-color: black;
         text-align: center;
         color: cyan;
@@ -92,3 +106,18 @@ footer{
         padding-top: 10px;
         font-size: 20px;
     }
+    
+    p{
+        padding-left: 60px
+    }
+    .promo-code{
+       
+        background-color: cyan;
+        border: 2px solid black;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;}
